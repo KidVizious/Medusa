@@ -9,7 +9,9 @@ class medusa{
     private:
         static constexpr auto LAT_OFFSET{90};
         static constexpr auto LON_OFFSET{180};
-        static constexpr std::array<char , 18> mFieldValues{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R'};
+        static constexpr auto DEGREES_PER_MINUTE{1.0f/60.0f};
+
+        static constexpr std::array<char , 23> mCharacterTable{{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W'}};
         float mLat{};
         float mLon{};
         std::string mLocator{};
